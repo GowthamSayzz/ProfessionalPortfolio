@@ -27,7 +27,7 @@ export const Bio = {
     "SQL Developer",
     ".NET Developer",
     "Manual Tester",
-    "Production Support"
+    "Production Engineer"
   ],
   description: "Front End Software Developer with 4 years of experience in building responsive and scalable POS systems in the retail domain. I am skilled in React JS, JavaScript, and front-end integration with APIs. Experienced in optimizing UI/UX, automating workflows with PowerShell and SQL, and delivering high performance web solutions. and committed to delivering high quality, performance driven solutions in software development.",
   resume: "https://drive.google.com/file/d/1bIdg0fRMqHQa7rrXvY2g3IPxKBLrgM9E/view?usp=sharing",

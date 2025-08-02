@@ -5,7 +5,6 @@ import engImg from '../Images/EngLogo.png';
 import reactIcon from '../Images/React.png';
 import javascriptIcon from '../Images/JavaScript-logo.png';
 import awsIcon from '../Images/aws-lo.png';
-import javaIcon from '../Images/java-logo.png';
 import sqlIcon from '../Images/SQL_Image.png';
 import htmlIcon from '../Images/html-icon.png';
 import cssIcon from '../Images/css-icon.png';
@@ -17,7 +16,10 @@ import vscodeIcon from '../Images/vscode-icon.png';
 import postmanIcon from '../Images/postman-icon.png';
 import jiraIcon from '../Images/jira-icon.png';
 import swaggerIcon from '../Images/Swagger-logo.png';
-import postgresIcon from '../Images/postgresql-icon.png';
+//import postgresIcon from '../Images/postgresql-icon.png';
+import nodejsIcon from '../Images/nodejs.png';
+import dotnet from '../Images/dotnet.png';
+import figmaIcon from '../Images/figma.png';
 
 export const Bio = {
   name: "Gowtham Kunjeti",
@@ -39,24 +41,12 @@ export const skills = [
     title: "Frontend",
     skills: [
       {
-        name: "React JS",
+        name: "ReactJS",
         image: reactIcon
       },
       {
         name: "JavaScript",
         image:javascriptIcon
-      },
-      {
-        name: "AWS",
-        image:awsIcon
-      },
-      {
-        name: "Java",
-        image: javaIcon
-      },
-      {
-        name: "SQL",
-        image: sqlIcon
       },
       {
         name: "HTML",
@@ -70,36 +60,38 @@ export const skills = [
         name: "Bootstrap",
         image: bootstrapIcon,
       },
+      {
+        name: "Figma",
+        image: figmaIcon,
+      },
     ],
   },
-  /* {
+  {
       title: "Backend",
       skills: [
         {
-          name: "Node Js",
-          image: "https://nodejs.org/static/images/logo.svg",
+          name: "NodeJS",
+          image: nodejsIcon,
         },
         {
-          name: "Python",
-          image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-        },
-        {
-          name: "MySQL",
-          image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
-        },
-        {
-          name: "Postgresql",
-          image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+          name: "SQL",
+          image: sqlIcon
         },
         {
           name: "MongoDB",
-          image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+          image: mongoDBIcon
+        },
+        {
+          name: "AWS",
+          image: awsIcon
+        },
+        {
+          name: ".NET Core",
+          image: dotnet
         },
       ],
     },
+    /*
     {
       title: "Android",
       skills: [
@@ -137,10 +129,6 @@ export const skills = [
         image: githubIcon,
       },
       {
-        name: "MongoDB",
-        image: mongoDBIcon,
-      },
-      {
         name: "VS Code",
         image: vscodeIcon,
       },
@@ -154,11 +142,7 @@ export const skills = [
       },
       {
         name: "Swagger",
-        image: swaggerIcon,
-      },
-      {
-        name: "Postgres",
-        image: postgresIcon,
+        image: swaggerIcon
       },
     ],
   },
@@ -171,9 +155,7 @@ export const experiences = [
     role: "Member Technical Staff",
     company: "NEC Corporation India Pvt Ltd.",
     date: "Aug 2021 - Present",
-    desc: `Conducting thorough analysis of POS system issues, generating comprehensive reports, and recommending actionable solutions for resolution.
-    Leveraging PowerShell scripting to automate processes, thereby reducing downtime and addressing high-impact issues efficiently.
-    Overseeing software update management for POS terminals, ensuring smooth implementation and rapid resolution of any arising issues.`,
+    desc: "Performed in-depth analysis of POS system issues, generated detailed reports, and provided actionable solutions to drive resolution. Utilized PowerShell scripting to automate key processes, minimizing downtime and addressing high-priority incidents effectively. Managed software update rollouts for POS terminals, ensuring seamless deployment and prompt issue resolution.",
     skills: [
       "React JS",
       "Node Js",
@@ -268,9 +250,9 @@ export const education = [
     school: "SCSVMV University, Kanchipuram",
     date: "Aug 2017 - Apr 2021",
     grade: "8.6 CGPA",
-    desc: "I've completed my Bachelor's degree in Computer Science and Engineering at SCSVMV University, Kanchipuram. I have taken courses in DSA, OOPS, Database Management Systems, Operating Systems & Computer Networks, among others.",
+    desc: "My coursework included Data Structures and Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, and Computer Networks, among other foundational subjects.",
     degree: "Bachelor of Engineering, Computer Science and Engineering",
-  }
+  },
   /*
   {
     id: 1,

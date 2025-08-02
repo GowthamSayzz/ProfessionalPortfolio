@@ -28,7 +28,7 @@ export const Bio = {
     ".NET Developer",
     "Manual Tester",
   ],
-  description: "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+  description: "Front End Software Developer with 4 years of experience in building responsive and scalable POS systems in the retail domain. I am skilled in React JS, JavaScript, and front-end integration with APIs. Experienced in optimizing UI/UX, automating workflows with PowerShell and SQL, and delivering high performance web solutions. and committed to delivering high quality, performance driven solutions in software development.",
   resume: "https://drive.google.com/file/d/1bIdg0fRMqHQa7rrXvY2g3IPxKBLrgM9E/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/gk7731",
 };

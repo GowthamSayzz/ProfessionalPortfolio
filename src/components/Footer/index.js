@@ -2,6 +2,8 @@ import styled from 'styled-components';
 //import FacebookIcon from '@mui/icons-material/Facebook';
 //import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 //import InstagramIcon from '@mui/icons-material/Instagram';
 import { Bio } from '../../data/constants';
 
@@ -69,6 +71,7 @@ const SocialMediaIcons = styled.div`
 const SocialMediaIcon = styled.a`
   display: inline-block;
   margin: 0 1rem;
+  margin-bottom: 70px;
   font-size: 1.5rem;
   color: ${({ theme }) => theme.text_primary};
   transition: color 0.2s ease-in-out;
@@ -86,11 +89,14 @@ function Footer() {
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#education">Education</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </Nav>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display" rel="noopener noreferrer"><LinkedInIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.github} target="display" rel="noopener noreferrer"><GitHubIcon /></SocialMediaIcon>
+          <SocialMediaIcon href={Bio.gmail} target="display" rel="noopener noreferrer"><EmailIcon /></SocialMediaIcon>
         </SocialMediaIcons>
       </FooterWrapper>
     </FooterContainer>

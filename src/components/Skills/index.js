@@ -62,6 +62,11 @@ const Skill = styled.div`
   border: 0.1px solid #854ce6;
   border-radius: 16px;
   padding: 18px 36px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  }
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -125,12 +130,12 @@ const Skills = () => {
         <Title>Skills</Title>
         <Desc>
           {""}
-          I have hands on experience with the following technologies and tools as a developer over 4 years of professional work.
+          I have hands on experience with the following technologies and tools as a developer over 4 years of professional experience
         </Desc>
         <SkillsContainer>
           {skills.map((item) => (
             <Skill>
-              <SkillTitle>{item.title}</SkillTitle><br/>
+              <SkillTitle>{item.title}</SkillTitle><br />
               <SkillList>
                 {item.skills.map((skill) => (
                   <SkillItem>

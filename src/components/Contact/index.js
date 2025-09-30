@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
+import { Bio } from '../../data/constants';
 
 const Container = styled.div`
   display: flex;
@@ -161,7 +162,7 @@ const Contact = () => {
       <Wrapper>
         <Title>Contact</Title>
         <Desc>
-          Feel free to reach out to me for any questions or opportunities!
+          Feel free to reach out to me for any questions or collaborations!
         </Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 📧</ContactTitle>
@@ -169,7 +170,7 @@ const Contact = () => {
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
-          <ContactButton type="submit" value="Send" />
+          <ContactButton as="a" href={Bio.gmail} target="_blank" rel="noopener noreferrer">Send</ContactButton>
         </ContactForm>
         <Snackbar
           open={open}

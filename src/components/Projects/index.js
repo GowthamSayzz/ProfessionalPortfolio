@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { education } from "../../data/constants";
+import { projects } from "../../data/constants";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineContent from "@mui/lab/TimelineContent";
-import EducationCard from "../Cards/EducationCard";
+import { TimelineContent } from "@mui/lab";
+import ProjectsCard from "../Cards/ProjectsCard";
 
 const Container = styled.div`
   display: flex;
@@ -65,30 +65,30 @@ const TimeLineSection = styled.div`
   gap: 12px;
 `;
 
-const Education = () => {
-  return (
-    <Container id="education">
-      <Wrapper>
-        <Title>Education</Title>
-        <Desc></Desc>
-        <TimeLineSection>
-          <Timeline>
-            {education.map((educations, index) => (
-              <TimelineItem>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" color="secondary" />
-                  {index !== education.length - 1 && <TimelineConnector />}
-                </TimelineSeparator>
-                <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={educations} />
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </TimeLineSection>
-      </Wrapper>
-    </Container>
-  );
+const Projects = () => {
+    return (
+        <Container id="projects">
+            <Wrapper>
+                <Title>Projects</Title>
+                <Desc></Desc>
+                <TimeLineSection>
+                    <Timeline>
+                        {projects.map((project, index) => (
+                            <TimelineItem>
+                                <TimelineContent sx={{ py: "12px", px: 2 }}>
+                                    <ProjectsCard projects={project} />
+                                </TimelineContent>
+                                <TimelineSeparator>
+                                    <TimelineDot variant="outlined" color="secondary" />
+                                    {index !== projects.length - 1 && <TimelineConnector />}
+                                </TimelineSeparator>
+                            </TimelineItem>
+                        ))}
+                    </Timeline>
+                </TimeLineSection>
+            </Wrapper>
+        </Container>
+    );
 };
 
-export default Education;
+export default Projects;

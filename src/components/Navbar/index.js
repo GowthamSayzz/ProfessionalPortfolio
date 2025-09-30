@@ -87,6 +87,7 @@ width:100%
 display:flex;
 justify-content: center;
 align-items: center;
+margin-top: 20px;
 gap: 32px;
 list-style: none;
 @media screen and (max-width: 768px)
@@ -142,7 +143,7 @@ flex-direction: column;
 justify-content: center;
 gap: 16px;
 position: absolute;
-top: 80;
+top: 30px;
 right: 0;
 width: 100%;
 padding: 12px 40px 24px 40px;
@@ -200,6 +201,7 @@ const Navbar = () => {
           <NavLink href="#skills">Skills</NavLink>
           <NavLink href="#experience">Experience</NavLink>
           <NavLink href="#education">Education</NavLink>
+          <NavLink href="#projects">Projects</NavLink>
           <NavLink href="#contact">Contact</NavLink>
         </NavItems>
         {/* <ButtonContainer>
@@ -213,6 +215,7 @@ const Navbar = () => {
             <MobileMenuLinks href="#skills" onClick={()=>{setOpen(!open);}}>Skills</MobileMenuLinks>
             <MobileMenuLinks href="#experience" onClick={()=>{setOpen(!open);}}>Experience</MobileMenuLinks>
             <MobileMenuLinks href="#education" onClick={()=>{setOpen(!open);}}>Education</MobileMenuLinks>
+            <MobileMenuLinks href="#projects" onClick={()=>{setOpen(!open);}}>Projects</MobileMenuLinks>
             <MobileMenuLinks href="#contact" onClick={()=>{setOpen(!open);}}>Contact</MobileMenuLinks>
             {/* <GitHubButton style={{padding: "10px 16px",
               background: `${({theme})=> theme.primary}`,

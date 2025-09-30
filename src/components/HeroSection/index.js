@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../Images/gowtham.JPEG";
-//import HeroBgAnimation from "../HeroBgAnimation";
+import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
   background-color: ${({ theme }) => theme.card_light};
@@ -24,26 +24,28 @@ const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-/* const HeroBg = styled.div`
+const HeroBg = styled.div`
   position: absolute;
   display: flex;
   justify-content: end;
-  top: 50%;
+  top: 6%;
   right: 0;
   bottom: 0;
-  left: 50%;
+  left: 0;
   overflow: hidden;
   width: 100%;
   height: 100%;
   padding: 0 30px;
-  -webkit-transform: translateX(-50%) translate(-50%);
-  transform: translateX(-50%) translate(-50%);
+  z-index: -1;
+  // -webkit-transform: translateX(-50%) translate(-50%);
+  // transform: translateX(-50%) translate(-50%);
 
   @media screen and (max-width: 960px) {
     padding: 0 0px;
     justify-content: center;
+    margin-top: 70%;
   }
-`; */
+`;
 
 const HeroInnerContainer = styled.div`
   display: flex;
@@ -178,6 +180,7 @@ const ResumeButton = styled.a`
   cursor: pointer;
   font-size: 20px; /* Default font size for larger screens */
   font-weight: 600;
+  margin-right: 15px;
   transition: all 0.2s ease-in-out !important;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
@@ -196,12 +199,14 @@ const ResumeButton = styled.a`
   @media (max-width: 640px) {
     padding: 12px 0;  /* Reduced padding for small screens */
     font-size: 18px;  /* Smaller font size for small screens */
+    margin-top: 20px;
   }
 
   /* Apply styles for medium screens (between 640px and 1024px) */
   @media (max-width: 1024px) {
     padding: 14px 0;  /* Adjusted padding for medium screens */
     font-size: 19px;  /* Adjusted font size for medium screens */
+    margin-top: 20px;
   }
 `;
 
@@ -231,9 +236,9 @@ const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
-        {/* <HeroBg>
+        <HeroBg>
           <HeroBgAnimation></HeroBgAnimation>
-        </HeroBg> */}
+        </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer>
             <Title>
@@ -255,6 +260,9 @@ const Hero = () => {
             <SubTitle>{Bio.description}</SubTitle>
             <ResumeButton href={Bio.resume} target="_blank">
               Check Resume
+            </ResumeButton>
+            <ResumeButton href={Bio.github} target="_blank">
+              Check GitHub Profile
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>

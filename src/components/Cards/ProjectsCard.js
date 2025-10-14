@@ -154,6 +154,8 @@ const DemoButton = styled.a`
   font-size: 20px; /* Default font size for larger screens */
   font-weight: 600;
   margin-right: 15px;
+  margin-bottom: 15px;
+  margin-top: 15px;
   transition: all 0.2s ease-in-out !important;
   background: hsla(271, 100%, 50%, 1);
   background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);

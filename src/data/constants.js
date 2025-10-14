@@ -35,7 +35,7 @@ export const Bio = {
     "Manual Tester",
     "Production Engineer"
   ],
-  description: "Front End Software Developer with 4 years of experience in building responsive and scalable POS systems in the retail domain. I am skilled in React JS, JavaScript, and front-end integration with APIs. Experienced in optimizing UI/UX, automating workflows with PowerShell and SQL, and delivering high performance web solutions. and committed to delivering high quality, performance driven solutions in software development.",
+  description: "Front End Software Developer with 4+ years of experience in building responsive and scalable POS systems in the retail domain. I am skilled in React JS, JavaScript, and front-end integration with APIs. Experienced in optimizing UI/UX, automating workflows with PowerShell and SQL, and delivering high performance web solutions. and committed to delivering high quality, performance driven solutions in software development.",
   resume: "https://drive.google.com/file/d/1volK1ArOSzzWzzSL3xFXxcD6qzejti4A/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/gk7731",
   github: 'https://github.com/GowthamSayzz',
@@ -290,7 +290,7 @@ export const projects = [
     image: project1,
     tags: [
       "ReactJS",
-      "Axios API",
+      "API",
       "JavaScript",
       "Bootstrap",
       "CSS3",
@@ -305,7 +305,7 @@ export const projects = [
     title: "Professional Portfolio",
     date: "Aug 2025 - Aug 2025",
     description:
-      "Developed a responsive personal portfolio website using React.js, HTML5, CSS3, and JavaScript. Implemented smooth animations and interactive UI components to enhance user experience. Optimized for performance and accessibility, ensuring cross-browser compatibility and mobile responsiveness.",
+      "Developed a responsive professionall portfolio website. Implemented smooth animations and interactive UI components to enhance user experience. Optimized for performance and accessibility, ensuring cross-browser compatibility and mobile responsiveness.",
     image: portfolioImg,
     tags: ["ReactJS", "Material UI", "JavaScript", "HTML5", "CSS3"],
     category: "portfolio",

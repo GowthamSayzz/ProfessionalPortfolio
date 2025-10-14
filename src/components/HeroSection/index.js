@@ -208,6 +208,18 @@ const ResumeButton = styled.a`
     font-size: 19px;  /* Adjusted font size for medium screens */
     margin-top: 20px;
   }
+
+  @media (max-width: 1440px) {
+    padding: 14px 0;   /* Adjusted padding for large screens */
+    font-size: 20px;   /* Larger font size for better readability */
+    margin-top: 20px;
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1320px) {
+    padding: 14px 0;   /* Adjusted padding for large screens */
+    font-size: 20px;   /* Larger font size for better readability */
+    margin-top: 20px;
+  }
 `;
 
 const Image = styled.img`

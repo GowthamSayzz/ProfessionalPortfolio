@@ -130,7 +130,7 @@ const Skills = () => {
         <Title>Skills</Title>
         <Desc>
           {""}
-          I have hands on experience with the following technologies and tools as a developer over 4 years of professional experience
+          I have hands on experience with the following technologies and tools as a developer over 4+ years of professional experience
         </Desc>
         <SkillsContainer>
           {skills.map((item) => (

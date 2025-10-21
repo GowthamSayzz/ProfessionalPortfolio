@@ -37,8 +37,6 @@ const HeroBg = styled.div`
   height: 100%;
   padding: 0 30px;
   z-index: -1;
-  // -webkit-transform: translateX(-50%) translate(-50%);
-  // transform: translateX(-50%) translate(-50%);
 
   @media screen and (max-width: 960px) {
     padding: 0 0px;
@@ -100,19 +98,18 @@ const HeroRightContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 3vw;  /* Use viewport width to make font size responsive */
+  font-size: 3vw;
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
   line-height: 1.2;
 
-  /* Medium screens (960px and below) */
   @media screen and (max-width: 960px) {
-    text-align: center; /* Center the text on smaller screens */
+    text-align: center;
   }
 
-  /* Smaller screens (640px and below) */
+
   @media screen and (max-width: 640px) {
-    font-size: 40px;  /* Set a specific font size for small screens */
+    font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
   }
@@ -174,11 +171,11 @@ const ResumeButton = styled.a`
   width: 95%;
   max-width: 300px;
   text-align: center;
-  padding: 16px 0; /* Default padding for larger screens */
+  padding: 16px 0;
   color: ${({ theme }) => theme.white};
   border-radius: 10px;
   cursor: pointer;
-  font-size: 20px; /* Default font size for larger screens */
+  font-size: 20px;
   font-weight: 600;
   margin-right: 15px;
   transition: all 0.2s ease-in-out !important;
@@ -195,29 +192,27 @@ const ResumeButton = styled.a`
     filter: brightness(1);
   }
 
-  /* Apply responsive styles for smaller screens (max-width: 640px) */
   @media (max-width: 640px) {
-    padding: 12px 0;  /* Reduced padding for small screens */
-    font-size: 18px;  /* Smaller font size for small screens */
+    padding: 12px 0;
+    font-size: 18px;
     margin-top: 20px;
   }
 
-  /* Apply styles for medium screens (between 640px and 1024px) */
   @media (max-width: 1024px) {
-    padding: 14px 0;  /* Adjusted padding for medium screens */
-    font-size: 19px;  /* Adjusted font size for medium screens */
+    padding: 14px 0;
+    font-size: 19px;
     margin-top: 20px;
   }
 
   @media (max-width: 1440px) {
-    padding: 14px 0;   /* Adjusted padding for large screens */
-    font-size: 20px;   /* Larger font size for better readability */
+    padding: 14px 0;
+    font-size: 20px;
     margin-top: 20px;
   }
   
   @media (min-width: 1025px) and (max-width: 1320px) {
-    padding: 14px 0;   /* Adjusted padding for large screens */
-    font-size: 20px;   /* Larger font size for better readability */
+    padding: 14px 0;
+    font-size: 20px;
     margin-top: 20px;
   }
 `;
@@ -261,10 +256,10 @@ const Hero = () => {
               <Span>
                 <Typewriter
                   options={{
-                    strings: Bio.roles, // Array of roles
+                    strings: Bio.roles,
                     autoStart: true,
-                    loop: true, // Loop the animation
-                    delay: 10, // Typing speed (adjust as needed)
+                    loop: true,
+                    delay: 10,
                   }}
                 />
               </Span>

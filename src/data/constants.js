@@ -16,14 +16,16 @@ import vscodeIcon from '../Images/vscode-icon.png';
 import postmanIcon from '../Images/postman-icon.png';
 import jiraIcon from '../Images/jira-icon.png';
 import swaggerIcon from '../Images/Swagger-logo.png';
-//import postgresIcon from '../Images/postgresql-icon.png';
 import nodejsIcon from '../Images/nodejs.png';
 import dotnet from '../Images/dotnet.png';
-import figmaIcon from '../Images/figma.png';
+import tailwindcss from '../Images/tailwindcss.png';
 import project1 from '../Images/Shoporia NoBg Logo.png';
 import portfolioImg from '../Images/portfolio.png';
 import narayanaLogo from '../Images/narayana-logo.png';
 import schoolLogo from '../Images/school.jpg';
+import materialui from '../Images/Material-Ui.png';
+import redux from '../Images/redux.png';
+import typescript from '../Images/typescript.png';
 
 export const Bio = {
   name: "Gowtham Kunjeti",
@@ -52,7 +54,27 @@ export const skills = [
       },
       {
         name: "JavaScript",
-        image:javascriptIcon
+        image: javascriptIcon
+      },
+      {
+        name: "Redux",
+        image: redux,
+      },
+      {
+        name: "TypeScript",
+        image: typescript,
+      },
+      {
+        name: "Bootstrap",
+        image: bootstrapIcon,
+      },
+      {
+        name: "Tailwind CSS",
+        image: tailwindcss,
+      },
+      {
+        name: "Material UI",
+        image: materialui,
       },
       {
         name: "HTML",
@@ -62,67 +84,33 @@ export const skills = [
         name: "CSS",
         image: cssIcon,
       },
-      {
-        name: "Bootstrap",
-        image: bootstrapIcon,
-      },
-      {
-        name: "Figma",
-        image: figmaIcon,
-      },
     ],
   },
   {
-      title: "Backend",
-      skills: [
-        {
-          name: "NodeJS",
-          image: nodejsIcon,
-        },
-        {
-          name: "SQL",
-          image: sqlIcon
-        },
-        {
-          name: "MongoDB",
-          image: mongoDBIcon
-        },
-        {
-          name: "AWS",
-          image: awsIcon
-        },
-        {
-          name: ".NET Core",
-          image: dotnet
-        },
-      ],
-    },
-    /*
-    {
-      title: "Android",
-      skills: [
-        {
-          name: "Java",
-          image:
-            "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-        },
-        {
-          name: "Kotlin",
-          image:
-            "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
-        },
-        {
-          name: "XML",
-          image:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-        },
-        {
-          name: "Android Studio",
-          image:
-            "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-        },
-      ],
-    },*/
+    title: "Backend",
+    skills: [
+      {
+        name: "NodeJS",
+        image: nodejsIcon,
+      },
+      {
+        name: "SQL",
+        image: sqlIcon
+      },
+      {
+        name: "MongoDB",
+        image: mongoDBIcon
+      },
+      {
+        name: "AWS",
+        image: awsIcon
+      },
+      {
+        name: ".NET Core",
+        image: dotnet
+      },
+    ],
+  },
   {
     title: "Tools",
     skills: [
@@ -173,8 +161,7 @@ export const experiences = [
       "C#",
       "SQL"
     ],
-    //doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-  },
+    },
   {
     id: 0,
     img: internImg,
@@ -189,7 +176,6 @@ export const experiences = [
       "Python",
       "Selenium",
     ],
-    //doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
   {
     id: 1,
@@ -205,49 +191,6 @@ export const experiences = [
       "Netlify"
     ],
   },
-      /*{
-    id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-    role: "Open Source Contributor ",
-    company: "GirlScript Summer of Code",
-    date: "May 2023 - Present",
-    desc: "Contributing to different open-source projects and learn from industry experts",
-    doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  },
-  {
-    id: 3,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-    role: "Android Developer",
-    company: "DSC KIIT",
-    date: "Nov2021 - Present",
-    desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-    skills: [
-      "Leadership",
-      "Mobile Application Development",
-      "Kotlin",
-      "XML",
-      "Figma",
-    ],
-  },
-  {
-    id: 4,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-    role: "Android Developer Intern",
-    company: "Rudraksha Welffare Foundation",
-    date: "June 2021 - Oct 2021",
-    desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-    skills: [
-      "Android",
-      "Java",
-      "Kotlin",
-      "XML",
-      "Node Js",
-      "Cloud Firestore",
-      "Firebase",
-      "Figma",
-    ],
-    doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  }, */
 ];
 
 export const education = [

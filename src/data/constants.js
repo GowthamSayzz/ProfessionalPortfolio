@@ -26,6 +26,7 @@ import schoolLogo from '../Images/school.jpg';
 import materialui from '../Images/Material-Ui.png';
 import redux from '../Images/redux.png';
 import typescript from '../Images/typescript.png';
+import gpCompany from '../Images/GP.png';
 
 export const Bio = {
   name: "Gowtham Kunjeti",
@@ -145,11 +146,29 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: gpCompany,
+    role: "Associate Senior Software Engineer",
+    company: "Global Payments",
+    date: "Nov 2025 - Present",
+    desc: "Developed multiple react based UI components of a financial product, addressed and resolved new development tasks and bugs.",
+    skills: [
+      "React JS",
+      "Node Js",
+      "TypeScript",
+      "Material UI",
+      "Redux",
+      "Thunks",
+      "GraphQL",
+      "AWS"
+    ],
+    },
+  {
+    id: 0,
     img: companyImg,
     role: "Member Technical Staff",
     company: "NEC Corporation India Pvt Ltd.",
-    date: "Aug 2021 - Present",
-    desc: "Performed in-depth analysis of POS system issues, generated detailed reports, and provided actionable solutions to drive resolution. Utilized PowerShell scripting to automate key processes, minimizing downtime and addressing high-priority incidents effectively. Managed software update rollouts for POS terminals, ensuring seamless deployment and prompt issue resolution.",
+    date: "Aug 2021 - Nov 2025",
+    desc: "Performed in-depth analysis of POS system issues, generated detailed reports, and provided actionable solutions to drive resolution. Utilized PowerShell scripting to automate key processes, minimizing downtime and addressing high-priority incidents effectively.",
     skills: [
       "React JS",
       "Node Js",
